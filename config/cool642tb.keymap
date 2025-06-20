@@ -13,45 +13,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        comb1 {
-            bindings = <&kp TAB>;
-            key-positions = <11 10>;
-        };
-
-        comb2 {
-            bindings = <&kp LS(ESCAPE)>;
-            key-positions = <0 1>;
-        };
-
-        comb3 {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <22 23>;
-        };
-
-        comb4 {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <9 8>;
-        };
-
-        comb5 {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <9 8>;
-            timeout-ms = <0>;
-            layers = <2>;
-        };
-    };
-
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
